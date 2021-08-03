@@ -7,3 +7,8 @@ const rotateString = (str, n, direction) => {
 };
 
 module.exports = rotateString;
+
+// 18) Check input 
+// 19) Checks for invalid direction
+// 20) Left rotation
+// 21) Right rotation

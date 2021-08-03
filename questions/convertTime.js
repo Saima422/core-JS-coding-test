@@ -9,3 +9,7 @@
 const convertTime = (seconds) => {};
 
 module.exports = convertTime;
+
+// 4) Checks for invalid input
+//     5) Contains properties {hours, minutes, seconds}
+//     6) Check correct conversion

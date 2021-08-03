@@ -42,3 +42,7 @@ const getObjectStructure = (obj) => {
 
 // donot remove this line
 module.exports = getObjectStructure;
+
+// 10) Check for no arguments passed
+//     11) Checks if null object is detected
+//     12) Check for single level object

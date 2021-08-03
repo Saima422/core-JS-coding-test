@@ -4,8 +4,36 @@
 3. Detect non numeric input and throw an error with message "Invalid Input"
 */
 
+// 1) Return sum 
+// 2) Detect empty inputs
+// 3) Detects alphabet inputs
+
 const addition = (...numbers) => {
-  // all your code
+  let sum = 0;
+
+  if(numbers.length === 0){
+    throw new Error("Invalid Input");
+  }
+
+  let isNum = true;
+
+  numbers.forEach((num) => {
+    if(!Number.isInteger(num)){
+      isNum = false;
+    }
+  })
+
+  if(isNum){
+      numbers.forEach((num) => {
+        sum += num;
+    });
+
+    return sum;
+  }
+  else{
+    throw new Error('Invalid Input');
+  }
+  
 };
 
 module.exports = addition;

@@ -9,3 +9,8 @@ Count the frequency of a vowels in a given string.
 const frequencyCounter = (str) => {};
 
 module.exports = frequencyCounter;
+
+
+// 7) Check for all objects
+//     8) Check for vowel frequency
+//     9) Check for invalid input
