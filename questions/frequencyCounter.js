@@ -19,7 +19,6 @@ const countEachFreq = (alpha, str) => {
          count += 1;
       }
    }
-
    return count;
 }
 
@@ -31,13 +30,12 @@ const frequencyCounter = (str) => {
    if(Number.isInteger(str)){
       throw new Error("Invalid Input");
    }
-   else{
 
-      Objkeys.forEach((item) => {
-         let returnValue = countEachFreq(item, str);
-         obj[item] = returnValue;
-      });
-   }
+   Objkeys.forEach((item) => {
+      let returnValue = countEachFreq(item, str);
+      obj[item] = returnValue;
+   });
+   
    return obj;
 };
 
