@@ -41,12 +41,20 @@
 // 12) Check for single level object
 
 const getObjectStructure = (obj) => {
+
   if(!obj){
     throw new Error("Invalid Input");
   }
-  if(obj.length == 0 ){
-    throw new Error("Invalid Input");
+
+  for(key in obj){
+    if(typeof obj[key] === "object"){
+        obj[key] = getObjectStructure(obj[key]);
+    }
+    else{
+        obj[key] = typeof obj[key];
+    }
   }
+  return obj;
 };
 
 // donot remove this line
