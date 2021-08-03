@@ -15,7 +15,7 @@ const countEachFreq = (alpha, str) => {
    str = str.split('');
 
    for(item in str){
-      if(item === alpha){
+      if(str[item] === alpha){
          count += 1;
       }
    }

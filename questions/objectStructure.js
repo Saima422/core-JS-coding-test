@@ -36,13 +36,20 @@
 // When no input is passed, the code should return an Error
 // new Error("Invalid Input")
 
+// 10) Check for no arguments passed
+// 11) Checks if null object is detected
+// 12) Check for single level object
+
 const getObjectStructure = (obj) => {
-  // write code here
+  if(!obj){
+    throw new Error("Invalid Input");
+  }
+  if(obj.length == 0 ){
+    throw new Error("Invalid Input");
+  }
 };
 
 // donot remove this line
 module.exports = getObjectStructure;
 
-// 10) Check for no arguments passed
-//     11) Checks if null object is detected
-//     12) Check for single level object
+
